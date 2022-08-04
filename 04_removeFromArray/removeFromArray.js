@@ -1,5 +1,5 @@
 const removeFromArray = function (sourceArray, ...notNeeded) {
-    for (const clear of notNeeded) {
+/*     for (const clear of notNeeded) {
         while (true) {
             const index = sourceArray.indexOf(clear);
             if (index === -1) break;
@@ -7,6 +7,8 @@ const removeFromArray = function (sourceArray, ...notNeeded) {
         }
     }
     return sourceArray;
+ */
+return sourceArray.filter(element => !notNeeded.includes(element));
 };
 
 // Do not edit below this line
